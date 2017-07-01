@@ -1,21 +1,4 @@
-#include <Wire.h>
-int a=1;
-float Acc=0;
 
-class MPU6050
-{
-  public:
-    MPU6050();
-    float Result[7];
-    void OpenMpu();//开启mpu
-    void ReadRes();//读取原始数据
-    void Out();    //输出原始数据
-    void Sum();  //数据处理
-    void Set(int address,int sum); //倍率设置
-};
-
-MPU6050::MPU6050()
-{   }
 
 void MPU6050::OpenMpu()
 {
